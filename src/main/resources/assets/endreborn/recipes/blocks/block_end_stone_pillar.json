@@ -3,22 +3,21 @@
     
     "pattern":
     [
-        "000", 
-        "000",
-        "000"      
+        "0", 
+        "0"     
     ],
     
     "key":
     {
         "0":
         {
-            "item": "endreborn:item_ingot_endorium"
+            "item": "minecraft:end_stone"
         }
     },
     
     "result":
     {
-        "item": "endreborn:block_endorium",
-        "count": 1
+        "item": "endreborn:block_end_stone_pillar",
+        "count": 2
     }
 }
