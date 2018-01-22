@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
 	"textures": {
-	    "layer0": "endreborn:items/item_raw_endorium"
+	    "layer0": "endreborn:items/item_ingot_endorium"
     }
 }
