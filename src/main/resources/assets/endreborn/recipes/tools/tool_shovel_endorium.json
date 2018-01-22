@@ -3,9 +3,9 @@
     
     "pattern":
     [
-        "00",
-        "01",
-        " 1"        
+        "0",
+        "1",
+        "1"        
     ],
     
     "key":
@@ -23,7 +23,7 @@
     
     "result":
     {
-        "item": "endreborn:tool_axe_endorium",
+        "item": "endreborn:tool_shovel_endorium",
         "count": 1
     }
 }

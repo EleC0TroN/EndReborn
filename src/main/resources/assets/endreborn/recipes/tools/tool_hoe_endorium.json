@@ -4,7 +4,7 @@
     "pattern":
     [
         "00",
-        "01",
+        " 1",
         " 1"        
     ],
     
@@ -23,7 +23,7 @@
     
     "result":
     {
-        "item": "endreborn:tool_axe_endorium",
+        "item": "endreborn:tool_hoe_endorium",
         "count": 1
     }
 }
