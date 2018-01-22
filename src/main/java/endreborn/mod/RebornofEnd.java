@@ -28,3 +28,16 @@ public class RebornofEnd
     {
     
     }
+
+    @EventHandler
+    public static void init(FMLInitializationEvent event)
+    {
+    
+    }
+
+    @EventHandler
+    public static void postInit(FMLPostInitializationEvent event)
+    {
+   
+    }
+}
