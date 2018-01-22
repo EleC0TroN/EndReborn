@@ -1,0 +1,30 @@
+﻿# Tab -
+itemGroup.endertab=Энд: Возрождение
+
+# Items -
+item.item_ingot_endorium.name=Эндориумовый слиток
+item.item_shard_obsidian.name=Обсидиановый осколок
+item.item_raw_endorium.name=Сырой эндориум
+
+# Blocks -
+tile.block_endorium.name=Блок эндориума
+tile.block_end_stone_pillar.name=Эндерняковый пилон
+tile.block_end_stone_smooth.name=Полированный эндерняк 
+tile.block_purpur_lamp.name=Пурпурная лампа
+
+# Tools -
+item.tool_axe_endorium.name=Эндориумовый топор
+item.tool_pickaxe_endorium.name=Эндориумовая кирка
+item.tool_sword_endorium.name=Эндориумовый меч
+item.tool_hoe_endorium.name=Эндориумовая мотыга
+item.tool_shovel_endorium.name=Эндориумовая лопата
+item.tool_hammer_iron.name=Кувалда
+
+#Armors
+item.armour_helmet_obsidian.name=Обсидиановый шлем
+item.armour_chestplate_obsidian.name=Обсидиановый нагрудник
+item.armour_leggings_obsidian.name=Обсидиановые поножи
+item.armour_boots_obsidian.name=Обсидиановые ботинки
+
+#Food
+item.food_ender_flesh.name=Плоть эндера

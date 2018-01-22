@@ -1,1 +1,30 @@
+# Tab -
+itemGroup.endertab=End: Reborn
 
+# Items -
+item.item_ingot_endorium.name=Endorium Ingot
+item.item_shard_obsidian.name=Obsidian Shard
+item.item_raw_endorium.name=Raw Endorium
+
+# Blocks -
+tile.block_endorium.name=Endorium Block
+tile.block_end_stone_pillar.name=End Stone Pillar
+tile.block_end_stone_smooth.name=Smooth End Stone 
+tile.block_purpur_lamp.name=Purpur Lamp
+
+# Tools -
+item.tool_axe_endorium.name=Endorium Axe
+item.tool_pickaxe_endorium.name=Endorium Pickaxe
+item.tool_sword_endorium.name=Endorium Sword
+item.tool_hoe_endorium.name=Endorium Hoe
+item.tool_shovel_endorium.name=Endorium Shovel
+item.tool_hammer_iron.name=Sledgehammer
+
+#Armors
+item.armour_helmet_obsidian.name=Obsidian Helmet
+item.armour_chestplate_obsidian.name=Obsidian Chestplate
+item.armour_leggings_obsidian.name=Obsidian Leggins
+item.armour_boots_obsidian.name=Obsidian Boots
+
+#Food
+item.food_ender_flesh.name=Ender Flesh
