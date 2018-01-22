@@ -3,15 +3,15 @@
     
     "pattern":
     [
-        "1", 
-        "0"    
+        "1 ", 
+        "00"    
     ],
     
     "key":
     {
         "0":
         {
-            "item": "minecraft:glowstone"
+            "item": "minecraft:ender_pearl"
         },
 
         "1":
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "minecraft:glowstone_dust",
-        "count": 4
+        "item": "endreborn:item_raw_endorium",
+        "count": 1
     }
 }

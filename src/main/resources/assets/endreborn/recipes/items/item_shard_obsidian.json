@@ -11,7 +11,7 @@
     {
         "0":
         {
-            "item": "minecraft:glowstone"
+            "item": "minecraft:obsidian"
         },
 
         "1":
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "minecraft:glowstone_dust",
-        "count": 4
+        "item": "endreborn:item_shard_obsidian",
+        "count": 3
     }
 }
