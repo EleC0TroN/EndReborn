@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "endreborn:food_ender_flesh"
+        },
+        "title": {
+            "translate": "advancements.endreborn.ender_flesh.title"
+        },
+        "description": {
+            "translate": "advancements.endreborn.ender_flesh.description"
+        },
+        "frame": "goal"
+    },
+    "parent": "endreborn:endreborn/root",
+    "criteria": {
+        "elytra": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "endreborn:food_ender_flesh"
+                    }
+                ]
+            }
+        }
+    }
+}
