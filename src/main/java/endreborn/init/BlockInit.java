@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import endreborn.objects.blocks.BlockBase;
+import endreborn.objects.blocks.EnderCropBase;
 import endreborn.objects.blocks.LampBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,5 +17,6 @@ public class BlockInit
 	public static final Block END_STONE_SMOOTH = new BlockBase("block_end_stone_smooth", Material.ROCK);
 	public static final Block END_STONE_PILLAR = new BlockBase("block_end_stone_pillar", Material.ROCK);
 	public static final Block PURPUR_LAMP = new LampBase("block_purpur_lamp", Material.ROCK);
+	public static final Block ENDER_FLOWER = new EnderCropBase("crop_ender_flower");
 
 }
