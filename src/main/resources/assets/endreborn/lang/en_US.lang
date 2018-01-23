@@ -29,3 +29,25 @@ item.armour_boots_obsidian.name=Obsidian Boots
 
 #Food
 item.food_ender_flesh.name=Ender Flesh
+
+#Advancements 
+advancements.endreborn.root.title=End: Reborn
+advancements.endreborn.root.description=The beginning of something more
+
+advancements.endreborn.end_stone.title=Souvenir
+advancements.endreborn.end_stone.description=Get: End Stone
+
+advancements.endreborn.raw_endorium.title=The Densest Material
+advancements.endreborn.raw_endorium.description=Create: Endorium
+
+advancements.endreborn.crop_ender_flower.title=Mutation
+advancements.endreborn.crop_ender_flower.description=Create: Ender`s Flower
+
+advancements.endreborn.obsidian_armor.title=I'm Tanking !
+advancements.endreborn.obsidian_armor.description=Create: Obsidian Armor
+
+advancements.endreborn.endermen_curse.title=You're an Killer...
+advancements.endreborn.endermen_curse.description=Create: Endorium Sword
+
+advancements.endreborn.ender_flesh.title=Delicacy
+advancements.endreborn.ender_flesh.description=Eat: Ender Flesh

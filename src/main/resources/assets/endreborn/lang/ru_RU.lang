@@ -29,3 +29,25 @@ item.armour_boots_obsidian.name=Обсидиановые ботинки
 
 #Food
 item.food_ender_flesh.name=Плоть эндера
+
+#Advancements 
+advancements.endreborn.root.title=Энд: Возрождение
+advancements.endreborn.root.description=Начало чего-то большего
+
+advancements.endreborn.end_stone.title=Сувенир
+advancements.endreborn.end_stone.description=Получить: Эндерняк
+
+advancements.endreborn.raw_endorium.title=Плотный материал
+advancements.endreborn.raw_endorium.description=Создать: Эндориум
+
+advancements.endreborn.crop_ender_flower.title=Мутация
+advancements.endreborn.crop_ender_flower.description=Создать: Цветок эндера
+
+advancements.endreborn.obsidian_armor.title=Я танкую !
+advancements.endreborn.obsidian_armor.description=Создать: Обсидиановую броню
+
+advancements.endreborn.endermen_curse.title=Ты - убийца...
+advancements.endreborn.endermen_curse.description=Создать: Эндориумовый меч
+
+advancements.endreborn.ender_flesh.title=Деликатес
+advancements.endreborn.ender_flesh.description=Съесть: Плоть эндера
