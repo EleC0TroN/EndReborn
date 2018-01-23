@@ -5,6 +5,7 @@ itemGroup.endertab=End: Reborn
 item.item_ingot_endorium.name=Endorium Ingot
 item.item_shard_obsidian.name=Obsidian Shard
 item.item_raw_endorium.name=Raw Endorium
+tile.crop_ender_flower.name=Ender`s Flower
 
 # Blocks -
 tile.block_endorium.name=Endorium Block

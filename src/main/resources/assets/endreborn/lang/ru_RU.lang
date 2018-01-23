@@ -5,6 +5,7 @@ itemGroup.endertab=Энд: Возрождение
 item.item_ingot_endorium.name=Эндориумовый слиток
 item.item_shard_obsidian.name=Обсидиановый осколок
 item.item_raw_endorium.name=Сырой эндориум
+tile.crop_ender_flower.name=Цветок эндера
 
 # Blocks -
 tile.block_endorium.name=Блок эндориума
