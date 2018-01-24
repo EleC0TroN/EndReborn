@@ -8,8 +8,7 @@
         },
         "description": {
             "translate": "advancements.endreborn.ender_flesh.description"
-        },
-        "frame": "goal"
+        }
     },
     "parent": "endreborn:endreborn/root",
     "criteria": {

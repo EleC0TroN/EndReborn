@@ -8,8 +8,8 @@
         },
         "description": {
             "translate": "advancements.endreborn.end_stone.description"
-        },
-        "frame": "goal"
+        }
+
     },
     "parent": "endreborn:endreborn/root",
     "criteria": {

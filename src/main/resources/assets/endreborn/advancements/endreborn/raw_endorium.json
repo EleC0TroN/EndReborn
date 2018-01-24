@@ -8,10 +8,10 @@
         },
         "description": {
             "translate": "advancements.endreborn.raw_endorium.description"
-        },
-        "frame": "goal"
+        }
+        
     },
-    "parent": "endreborn:endreborn/root",
+    "parent": "endreborn:endreborn/iron_hammer",
     "criteria": {
         "elytra": {
             "trigger": "minecraft:inventory_changed",

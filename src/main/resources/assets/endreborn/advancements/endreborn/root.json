@@ -9,6 +9,7 @@
         "description": {
             "translate": "advancements.endreborn.root.description"
         },
+        "frame": "goal",
         "background": "minecraft:textures/gui/advancements/backgrounds/endreborn.png",
         "show_toast": true,
         "announce_to_chat": false

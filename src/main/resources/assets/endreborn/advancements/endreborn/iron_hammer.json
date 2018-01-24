@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "endreborn:crop_ender_flower"
+            "item": "endreborn:tool_hammer_iron"
         },
         "title": {
-            "translate": "advancements.endreborn.crop_ender_flower.title"
+            "translate": "advancements.endreborn.iron_hammer.title"
         },
         "description": {
-            "translate": "advancements.endreborn.crop_ender_flower.description"
+            "translate": "advancements.endreborn.iron_hammer.description"
         }
 
     },
-    "parent": "endreborn:endreborn/end_stone",
+    "parent": "endreborn:endreborn/root",
     "criteria": {
         "elytra": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "endreborn:crop_ender_flower"
+                        "item": "endreborn:tool_hammer_iron"
                     }
                 ]
             }

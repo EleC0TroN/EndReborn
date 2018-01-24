@@ -8,7 +8,8 @@
         },
         "description": {
             "translate": "advancements.endreborn.obsidian_armor.description"
-        }
+        },
+        "frame": "goal"
     },
     "parent": "endreborn:endreborn/raw_endorium",
     "criteria": {
