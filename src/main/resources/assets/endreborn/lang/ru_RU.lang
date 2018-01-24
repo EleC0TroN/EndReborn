@@ -44,10 +44,13 @@ advancements.endreborn.crop_ender_flower.title=Мутация
 advancements.endreborn.crop_ender_flower.description=Создать: Цветок эндера
 
 advancements.endreborn.obsidian_armor.title=Я танкую !
-advancements.endreborn.obsidian_armor.description=Создать: Обсидиановую броню
+advancements.endreborn.obsidian_armor.description=Одеть: Обсидиановую броню
 
 advancements.endreborn.endermen_curse.title=Ты - убийца...
 advancements.endreborn.endermen_curse.description=Создать: Эндориумовый меч
 
 advancements.endreborn.ender_flesh.title=Деликатес
 advancements.endreborn.ender_flesh.description=Съесть: Плоть эндера
+
+advancements.endreborn.iron_hammer.title=Гефест
+advancements.endreborn.iron_hammer.description=Создать: Кувалду
