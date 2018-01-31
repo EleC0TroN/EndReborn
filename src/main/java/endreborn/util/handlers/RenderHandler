@@ -1,0 +1,25 @@
+package endreborn.util.handlers;
+
+import endreborn.entity.EntityInfZombie;
+import endreborn.entity.render.RenderInfZombie;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+
+public class RenderHandler 
+{
+	public static void registerEntityRenders() 
+	{
+		RenderingRegistry.registerEntityRenderingHandler(EntityInfZombie.class, new IRenderFactory<EntityInfZombie>()
+		{
+
+			@Override
+			public Render<? super EntityInfZombie> createRenderFor(RenderManager manager) 
+			{
+				return new RenderInfZombie(manager);
+			}
+				
+		});
+	}
+}
