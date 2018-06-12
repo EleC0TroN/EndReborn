@@ -4,10 +4,16 @@ import endreborn.init.BlockInit;
 import endreborn.init.ItemInit;
 import endreborn.mod.RebornofEnd;
 import endreborn.util.IHasModel;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class EnderCropBase extends BlockCrops implements IHasModel
 {
@@ -27,11 +33,33 @@ public class EnderCropBase extends BlockCrops implements IHasModel
 	{
 		return null;
 	}
+	
+	@Override
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.CUTOUT_MIPPED;
+    }
 
 	@Override
 	protected Item getCrop() 
 	{
 		return Items.ENDER_PEARL;
+	}
+	
+	@Override
+    public boolean canPlaceBlockAt(World world, BlockPos pos) {
+        return world.getBlockState(pos).getBlock().isReplaceable(world, pos) && world.getBlockState(pos.down()).getBlock() == Blocks.END_STONE;
+    }
+	
+	@Override
+    public boolean canBlockStay(World world, BlockPos pos, IBlockState state) {
+        return world.getBlockState(pos.down()).getBlock() == Blocks.END_STONE;
+    }
+	
+	@Override
+    public Block.EnumOffsetType getOffsetType() 
+	{
+    return Block.EnumOffsetType.XYZ;
 	}
 
 	@Override
