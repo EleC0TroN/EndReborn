@@ -1,6 +1,6 @@
-package endreborn.enity.render;
+package endreborn.entity.render;
 
-import endreborn.enity.EntityWatcher;
+import endreborn.entity.EntityWatcher;
 import endreborn.util.Reference;
 import net.minecraft.client.model.ModelEnderman;
 import net.minecraft.client.renderer.entity.Render;
