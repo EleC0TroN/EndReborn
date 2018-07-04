@@ -1,6 +1,6 @@
 package endreborn.entity.render;
 
-import endreborn.enity.EntityEGuard;
+import endreborn.entity.EntityEGuard;
 import endreborn.util.Reference;
 import net.minecraft.client.model.ModelBlaze;
 import net.minecraft.client.renderer.entity.Render;

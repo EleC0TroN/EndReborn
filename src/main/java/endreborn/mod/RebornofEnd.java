@@ -32,7 +32,7 @@ public class RebornofEnd
     @EventHandler
     public static void preInit(FMLPreInitializationEvent event)
     {
-		RegistryHandler.preInitRegistries();
+		RegistryHandler.preInitRegistries(event);
     }
 
     @EventHandler

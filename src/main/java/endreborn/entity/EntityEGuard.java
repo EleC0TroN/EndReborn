@@ -30,15 +30,12 @@ import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class EntityEGuard extends EntityMob
 {
-    /** Random offset used in floating behaviour */
     private float heightOffset = 0.5F;
-    /** ticks until heightOffset is randomized */
     private int heightOffsetUpdateTime;
     private static final DataParameter<Byte> ON_FIRE = EntityDataManager.<Byte>createKey(EntityEGuard.class, DataSerializers.BYTE);
 

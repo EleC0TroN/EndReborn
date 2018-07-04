@@ -11,8 +11,10 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber
 public class RegistryHandler 
@@ -48,13 +50,16 @@ public class RegistryHandler
 			}
 		}
 	}
-	public static void preInitRegistries()
+	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		MinecraftForge.EVENT_BUS.register(new EventsHandler());
     	EntitiesInit.init();
     
-		RenderHandler.registerEntityRenders();
+		if(event.getSide() == Side.CLIENT)
+		{
+			RenderHandler.registerEntityRenders();
+		}
 	}
 	public static void initRegistries()
 	{

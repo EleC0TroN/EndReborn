@@ -1,9 +1,9 @@
 package endreborn.util.handlers;
 
-import endreborn.enity.EntityEGuard;
-import endreborn.enity.EntityWatcher;
-import endreborn.enity.render.RenderEGuard;
-import endreborn.enity.render.RenderWatcher;
+import endreborn.entity.EntityEGuard;
+import endreborn.entity.EntityWatcher;
+import endreborn.entity.render.RenderEGuard;
+import endreborn.entity.render.RenderWatcher;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
