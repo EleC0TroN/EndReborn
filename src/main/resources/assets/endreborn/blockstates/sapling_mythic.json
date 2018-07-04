@@ -1,0 +1,7 @@
+{
+    "variants": 
+    {
+        "stage=0,variant=mythic": { "model": "endreborn:sapling_mythic" },
+        "stage=1,variant=mythic": { "model": "endreborn:sapling_mythic" }
+    }
+}

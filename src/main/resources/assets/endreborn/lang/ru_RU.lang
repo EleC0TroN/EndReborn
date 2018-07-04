@@ -5,13 +5,23 @@ itemGroup.endertab=Энд: Возрождение
 item.item_ingot_endorium.name=Эндориумовый слиток
 item.item_shard_obsidian.name=Обсидиановый осколок
 item.item_raw_endorium.name=Сырой эндориум
-tile.crop_ender_flower.name=Цветок эндера
+item.item_dragonite_seeds.name=Семена драгонита
+item.ender_bow.name=Эндориумовый лук
+item.ender_sword.name=Меч Энд-Мага Барклая
+item.item_end_essence.name=Эссенция края
+item.item_advanced_ender_pearl.name=Улучшеный жемчуг края
+item.item_end_shard.name=Фрагмент Края
+item.item_end_rune.name=Руна Края
 
 # Blocks -
 tile.block_endorium.name=Блок эндориума
 tile.block_end_stone_pillar.name=Эндерняковый пилон
 tile.block_end_stone_smooth.name=Полированный эндерняк 
 tile.block_purpur_lamp.name=Пурпурная лампа
+tile.crop_ender_flower.name=Цветок эндера
+tile.crop_dragonite.name=Драгонит
+tile.block_essence_ore.name=Руда эссенции
+tile.block_phantom.name=Фантомный блок
 
 # Tools -
 item.tool_axe_endorium.name=Эндориумовый топор
@@ -29,6 +39,14 @@ item.armour_boots_obsidian.name=Обсидиановые ботинки
 
 #Food
 item.food_ender_flesh.name=Плоть эндера
+item.food_dragonite_berries.name=Ягоды драгонита
+
+#Entities
+entity.endguard.name=Страж Края
+entity.watcher.name=Наблюдатель
+
+#Other
+tile.ender_sword.tooltip=ПКМ для телепортации
 
 #Advancements 
 advancements.endreborn.root.title=Энд: Возрождение
@@ -46,11 +64,20 @@ advancements.endreborn.crop_ender_flower.description=Создать: Цвето�
 advancements.endreborn.obsidian_armor.title=Я танкую !
 advancements.endreborn.obsidian_armor.description=Одеть: Обсидиановую броню
 
-advancements.endreborn.endermen_curse.title=Ты - убийца...
+advancements.endreborn.endermen_curse.title=Ты убийца...
 advancements.endreborn.endermen_curse.description=Создать: Эндориумовый меч
 
 advancements.endreborn.ender_flesh.title=Деликатес
 advancements.endreborn.ender_flesh.description=Съесть: Плоть эндера
 
 advancements.endreborn.iron_hammer.title=Гефест
-advancements.endreborn.iron_hammer.description=Создать: Кувалду
+advancements.endreborn.iron_hammer.description=Создать: Кувалда
+
+advancements.endreborn.ender_sword.title=Лорд Края
+advancements.endreborn.ender_sword.description=Создать: Меч Энд-Мага Барклая
+
+advancements.endreborn.mine_essence.title=Сила обсидиана
+advancements.endreborn.mine_essence.description=Добыть: Руда эссенции
+
+advancements.endreborn.end_rune.title=Я вижу...
+advancements.endreborn.end_rune.description=Создать: Руна Края
