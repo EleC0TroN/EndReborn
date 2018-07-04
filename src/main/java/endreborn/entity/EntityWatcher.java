@@ -1,4 +1,4 @@
-package endreborn.enity;
+package endreborn.entity;
 
 import javax.annotation.Nullable;
 
