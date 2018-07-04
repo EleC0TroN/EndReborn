@@ -1,4 +1,4 @@
-package endreborn.enity.render;
+package endreborn.entity.render;
 
 import endreborn.enity.EntityEGuard;
 import endreborn.util.Reference;
