@@ -1,4 +1,4 @@
-package endreborn.enity;
+package endreborn.entity;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
