@@ -12,6 +12,7 @@ item.item_end_essence.name=Эссенция края
 item.item_advanced_ender_pearl.name=Улучшеный жемчуг края
 item.item_end_shard.name=Фрагмент Края
 item.item_end_rune.name=Руна Края
+item.item_lormyte_crystal.name=Кристалл лормита
 
 # Blocks -
 tile.block_endorium.name=Блок эндориума
@@ -22,6 +23,9 @@ tile.crop_ender_flower.name=Цветок эндера
 tile.crop_dragonite.name=Драгонит
 tile.block_essence_ore.name=Руда эссенции
 tile.block_phantom.name=Фантомный блок
+tile.block_lormyte_crystal.name=Блок лормита
+tile.block_decorative_lormyte.name=Декоративный лормит
+tile.block_entropy_end_stone.name=Энтропийный эндерняк
 
 # Tools -
 item.tool_axe_endorium.name=Эндориумовый топор
@@ -81,3 +85,6 @@ advancements.endreborn.mine_essence.description=Добыть: Руда эссе�
 
 advancements.endreborn.end_rune.title=Я вижу...
 advancements.endreborn.end_rune.description=Создать: Руна Края
+
+advancements.endreborn.lormyte_crystal.title=Что-то новое
+advancements.endreborn.lormyte_crystal.description=Добыть: Кристалл лормита

@@ -12,6 +12,7 @@ item.item_end_essence.name=End Essence
 item.item_advanced_ender_pearl.name=Advanced Ender Pearl
 item.item_end_shard.name=End Shards
 item.item_end_rune.name=End Rune
+item.item_lormyte_crystal.name=Lormyte Crystal
 
 # Blocks -
 tile.block_endorium.name=Endorium Block
@@ -22,6 +23,9 @@ tile.crop_dragonite.name=Dragonite
 tile.crop_ender_flower.name=Ender`s Flower
 tile.block_essence_ore.name=Essence Ore
 tile.block_phantom.name=Phantom Block
+tile.block_lormyte_crystal.name=Lormyte Block
+tile.block_decorative_lormyte.name=Decorative Lormyte
+tile.block_entropy_end_stone.name=Entropy End Stone
 
 # Tools -
 item.tool_axe_endorium.name=Endorium Axe
@@ -81,3 +85,6 @@ advancements.endreborn.mine_essence.description=Obtain: Essence Ore
 
 advancements.endreborn.end_rune.title=I see...
 advancements.endreborn.end_rune.description=Create: End Rune
+
+advancements.endreborn.lormyte_crystal.title=Something new
+advancements.endreborn.lormyte_crystal.description=Obtain: Lormyte Crystal
