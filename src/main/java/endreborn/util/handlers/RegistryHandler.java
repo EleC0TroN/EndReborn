@@ -5,6 +5,7 @@ import endreborn.init.EntitiesInit;
 import endreborn.init.ItemInit;
 import endreborn.util.IHasModel;
 import endreborn.world.OreGen;
+import endreborn.world.WorldGenCustomStructures;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -55,6 +56,7 @@ public class RegistryHandler
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		MinecraftForge.EVENT_BUS.register(new EventsHandler());
     	EntitiesInit.init();
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
     
 		if(event.getSide() == Side.CLIENT)
 		{

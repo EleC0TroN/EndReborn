@@ -46,6 +46,7 @@ public class ItemInit
     public static final Item END_ESSENCE = new ItemBase("item_end_essence");
     public static final Item END_SHARD = new ItemBase("item_end_shard");
     public static final Item END_RUNE = new ItemBase("item_end_rune");
+    public static final Item LORMYTE_CRYSTAL = new ItemBase("item_lormyte_crystal");
     
     //Tools
     public static final Item PICKAXE_ENDORIUM = new ToolPickaxe("tool_pickaxe_endorium", TOOL_ENDORIUM);

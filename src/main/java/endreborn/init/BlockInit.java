@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import endreborn.objects.blocks.BlockBase;
+import endreborn.objects.blocks.BlockCrystal;
 import endreborn.objects.blocks.BlockEssenceOre;
 import endreborn.objects.blocks.BlockPhantom;
 import endreborn.objects.blocks.DragonBush;
@@ -24,4 +25,7 @@ public class BlockInit
 	public static final Block DRAGON_BUSH = new DragonBush("crop_dragonite");
 	public static final Block ESSENCE_ORE = new BlockEssenceOre("block_essence_ore", Material.ROCK);
 	public static final Block PHANTOM_BLOCK = new BlockPhantom("block_phantom", Material.BARRIER, false);
+	public static final Block ENTROPY_END_STONE = new BlockBase("block_entropy_end_stone", Material.ROCK);
+	public static final Block LORMYTE_CRYSTAL = new BlockCrystal("block_lormyte_crystal", Material.ROCK);
+	public static final Block DECORATIVE_LORMYTE = new BlockCrystal("block_decorative_lormyte", Material.ROCK);
 }
