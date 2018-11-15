@@ -43,8 +43,9 @@ public class ItemEnderSword extends ItemSword implements IHasModel
         if (!playerIn.capabilities.isCreativeMode)
         {
             itemstack.shrink(0);
+            itemstack.damageItem(4, playerIn);
         }
-
+       
         worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ENDERPEARL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
         playerIn.getCooldownTracker().setCooldown(this, 20);
 

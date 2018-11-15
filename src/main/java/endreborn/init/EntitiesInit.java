@@ -1,12 +1,15 @@
 package endreborn.init;
 
 import endreborn.entity.render.RenderEGuard;
+import endreborn.entity.render.RenderLord;
 import endreborn.entity.render.RenderWatcher;
 import endreborn.entity.EntityEGuard;
+import endreborn.entity.EntityLord;
 import endreborn.entity.EntityWatcher;
 import endreborn.mod.RebornofEnd;
 import endreborn.util.Reference;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.entity.monster.EntityEndermite;
 import net.minecraft.init.Biomes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -29,12 +32,16 @@ public class EntitiesInit {
         EntityRegistry.addSpawn(EntityWatcher.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.SAVANNA);
         EntityRegistry.addSpawn(EntityWatcher.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.TAIGA);
         EntityRegistry.addSpawn(EntityWatcher.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
+        EntityRegistry.addSpawn(EntityEndermite.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.SKY);
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID, "endlord"), EntityLord.class, "endlord", id++, RebornofEnd.instance, 64, 3, false, 461076, 2236447);
+       
     }
     
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         RenderingRegistry.registerEntityRenderingHandler(EntityEGuard.class, RenderEGuard.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityWatcher.class, RenderWatcher.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityLord.class, RenderLord.FACTORY);
     }
 }
 

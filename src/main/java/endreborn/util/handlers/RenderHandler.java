@@ -1,8 +1,10 @@
 package endreborn.util.handlers;
 
 import endreborn.entity.EntityEGuard;
+import endreborn.entity.EntityLord;
 import endreborn.entity.EntityWatcher;
 import endreborn.entity.render.RenderEGuard;
+import endreborn.entity.render.RenderLord;
 import endreborn.entity.render.RenderWatcher;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -29,5 +31,13 @@ public class RenderHandler
 			return new RenderWatcher(manager);
 		}
 	});
+	RenderingRegistry.registerEntityRenderingHandler(EntityLord.class, new IRenderFactory<EntityLord>()
+	{
+	@Override
+	public Render<? super EntityLord> createRenderFor(RenderManager manager) 
+	{
+		return new RenderLord(manager);
 	}
+});
+}
 }

@@ -14,7 +14,7 @@ public class BlockEssenceOre extends BlockBase {
 		super(name, material);
 		
 		setSoundType(SoundType.STONE);
-		setHardness(3.0F);
+		setHardness(5.0F);
 		setResistance(25.0F);
 		setLightLevel(1.0F);
 		setHarvestLevel("pickaxe", 3);
@@ -25,5 +25,4 @@ public class BlockEssenceOre extends BlockBase {
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return ItemInit.END_ESSENCE;
 	}
-
 }

@@ -53,10 +53,11 @@ public class RegistryHandler
 	}
 	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
+		MinecraftForge.EVENT_BUS.register(new EventHandler());
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
-		MinecraftForge.EVENT_BUS.register(new EventsHandler());
     	EntitiesInit.init();
 		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
+		ConfigHandler.registerConfig(event);
     
 		if(event.getSide() == Side.CLIENT)
 		{
@@ -65,7 +66,7 @@ public class RegistryHandler
 	}
 	public static void initRegistries()
 	{
-
+		
 	}
 }
 

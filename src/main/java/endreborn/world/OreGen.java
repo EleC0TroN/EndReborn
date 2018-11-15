@@ -3,6 +3,7 @@ package endreborn.world;
 import java.util.Random;
 
 import endreborn.init.BlockInit;
+import endreborn.util.handlers.ConfigHandler;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -15,12 +16,13 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class OreGen implements IWorldGenerator
 {
-	private WorldGenerator ore_end_essence, ore_over_essence;
+	private WorldGenerator ore_end_essence, ore_over_essence, ore_wolframium;
 	
 	public OreGen() 
 	{
 		ore_end_essence = new WorldGenMinable(BlockInit.ESSENCE_ORE.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.OBSIDIAN));
 		ore_over_essence = new WorldGenMinable(BlockInit.ESSENCE_ORE.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.OBSIDIAN));
+		ore_wolframium = new WorldGenMinable(BlockInit.ORE_WOLFRAMIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
 	}
 	
 	@Override
@@ -35,14 +37,21 @@ public class OreGen implements IWorldGenerator
 			break;
 			
 		case 0:
-			
+			if(ConfigHandler.spawnEssenceOre)
+			{
 			runGenerator(ore_over_essence, world, random, chunkX, chunkZ, 50, 0, 256);
-			
+			}
+			if(ConfigHandler.spawnWolframiumOre)
+			{
+			runGenerator(ore_wolframium, world, random, chunkX, chunkZ, 25, 0, 48);
+			}
 			break;
 			
 		case 1:
-			
+			if(ConfigHandler.spawnEssenceOre)
+			{
 			runGenerator(ore_end_essence, world, random, chunkX, chunkZ, 100, 0, 256);
+			}
 		}
 	}
 	

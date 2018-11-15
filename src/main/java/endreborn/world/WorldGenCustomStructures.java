@@ -2,6 +2,7 @@ package endreborn.world;
 
 import java.util.Random;
 
+import endreborn.util.handlers.ConfigHandler;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -14,6 +15,7 @@ import net.minecraft.world.biome.BiomeForest;
 import net.minecraft.world.biome.BiomeOcean;
 import net.minecraft.world.biome.BiomePlains;
 import net.minecraft.world.biome.BiomeSavanna;
+import net.minecraft.world.biome.BiomeSwamp;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -32,16 +34,28 @@ public class WorldGenCustomStructures implements IWorldGenerator
 		switch(world.provider.getDimension())
 		{
 			case 1:
+				if(ConfigHandler.spawnLormyte)
+				{
 				generateStructure2(new WorldGenStructure("lormyte_crystal"), world, rand, chunkX, chunkZ, 50, Blocks.END_STONE, BiomeEnd.class);
-				
+				}
 				break;
 
 			case 0:
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 100, Blocks.AIR, BiomePlains.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 100, Blocks.AIR, BiomeForest.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 100, Blocks.AIR, BiomeDesert.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 100, Blocks.AIR, BiomeOcean.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 100, Blocks.AIR, BiomeSavanna.class);
+				if(ConfigHandler.spawnEndIsland)
+				{
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomePlains.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeForest.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeDesert.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeOcean.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeSavanna.class);
+				}
+				if(ConfigHandler.spawnObservatory)
+				{
+				generateStructure3(new WorldGenStructure("observ"), world, rand, chunkX, chunkZ, 500, Blocks.STONE, BiomeSwamp.class);
+				generateStructure3(new WorldGenStructure("observ"), world, rand, chunkX, chunkZ, 500, Blocks.STONE, BiomeForest.class);
+				generateStructure3(new WorldGenStructure("observ"), world, rand, chunkX, chunkZ, 600, Blocks.STONE, BiomeDesert.class);
+				generateStructure3(new WorldGenStructure("observ"), world, rand, chunkX, chunkZ, 600, Blocks.STONE, BiomeOcean.class);
+				}
 				generateStructure2(new WorldGenStructure(""), world, rand, chunkX, chunkZ, 1000, Blocks.STONE, Biome.class);
 				break;
 
@@ -92,6 +106,32 @@ public class WorldGenCustomStructures implements IWorldGenerator
 		int y = 57;
 
 		BlockPos pos = new BlockPos(x, y, z);
+		Class<?> biome = world.provider.getBiomeForCoords(pos).getClass();
+
+		if(world.getWorldType() != WorldType.FLAT)
+		{
+			if(classesList.contains(biome))
+			{
+				if(rand.nextInt(chance) == 0)
+				{
+					generator.generate(world, rand, pos);
+				}
+			}
+		}
+	}
+	private void generateStructure3(WorldGenerator generator, World world, Random rand, 
+
+			int chunkX, int chunkZ, int chance, Block topBlock, Class<?>... classes)
+
+	{
+		List<Class<?>> classesList = Arrays.asList(classes);
+
+		int x = (chunkX * 16) + rand.nextInt(15);
+		int z = (chunkZ * 16) + rand.nextInt(15);
+		int y = 3;
+
+		BlockPos pos = new BlockPos(x, y, z);
+
 		Class<?> biome = world.provider.getBiomeForCoords(pos).getClass();
 
 		if(world.getWorldType() != WorldType.FLAT)

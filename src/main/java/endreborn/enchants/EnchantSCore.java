@@ -1,0 +1,31 @@
+package endreborn.enchants;
+
+
+import endreborn.util.Reference;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnumEnchantmentType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.MobEffects;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.potion.PotionEffect;
+
+public class EnchantSCore extends Enchantment {
+
+    public EnchantSCore() {
+        super(Rarity.RARE, EnumEnchantmentType.WEAPON, new EntityEquipmentSlot[] { EntityEquipmentSlot.MAINHAND });
+        setRegistryName(Reference.MODID, "shalker_core");
+        setName("shalker_core");
+    }
+
+    public void onEntityDamaged(EntityLivingBase user, Entity target, int level) {
+
+        ((EntityLivingBase) target).addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 50, level + 2));
+    }
+
+    @Override
+    public int getMaxLevel()
+    {
+        return 3;
+    }
+}
