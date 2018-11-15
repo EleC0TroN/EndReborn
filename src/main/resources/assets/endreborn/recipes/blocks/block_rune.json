@@ -3,42 +3,32 @@
     
     "pattern":
     [
-        "343",
-        "202",
-        " 1 "        
+        "000", 
+        "212",
+        "000"      
     ],
     
     "key":
     {
         "0":
         {
-            "item": "endreborn:tool_sword_endorium"
+            "item": "minecraft:purpur_block"
         },
-        
+
         "1":
         {
             "item": "endreborn:item_end_rune"
         },
 
-	"2":
-        {
-            "item": "endreborn:item_raw_endorium"
-        },
-
-	"3":
+        "2":
         {
             "item": "endreborn:item_end_essence"
-        },
-
-	"4":
-        {
-            "item": "endreborn:item_ender_string"
         }
     },
     
     "result":
     {
-        "item": "endreborn:ender_sword",
+        "item": "endreborn:block_rune",
         "count": 1
     }
 }

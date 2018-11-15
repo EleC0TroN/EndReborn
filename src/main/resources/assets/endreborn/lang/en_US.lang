@@ -3,6 +3,7 @@ itemGroup.endertab=End: Reborn
 
 # Items -
 item.item_ingot_endorium.name=Endorium Ingot
+item.item_ingot_wolframium.name=Wolframium Ingot
 item.item_shard_obsidian.name=Obsidian Shard
 item.item_raw_endorium.name=Raw Endorium
 item.item_dragonite_seeds.name=Dragonite Seeds
@@ -13,9 +14,12 @@ item.item_advanced_ender_pearl.name=Advanced Ender Pearl
 item.item_end_shard.name=End Shards
 item.item_end_rune.name=End Rune
 item.item_lormyte_crystal.name=Lormyte Crystal
+item.item_ender_string.name=String of Life
+item.item_world_mirror.name=World Mirror
 
 # Blocks -
 tile.block_endorium.name=Endorium Block
+tile.block_wolframium.name=Wolframium Block
 tile.block_end_stone_pillar.name=End Stone Pillar
 tile.block_end_stone_smooth.name=Smooth End Stone 
 tile.block_purpur_lamp.name=Purpur Lamp
@@ -26,6 +30,13 @@ tile.block_phantom.name=Phantom Block
 tile.block_lormyte_crystal.name=Lormyte Block
 tile.block_decorative_lormyte.name=Decorative Lormyte
 tile.block_entropy_end_stone.name=Entropy End Stone
+tile.block_wolframium_ore.name=Wolframium Ore
+tile.block_rune.name=Runic Block
+tile.e_end_bricks_stairs.name=End Stone Stairs
+tile.smooth_end_stone_stairs.name=Smooth End Stone Stairs
+tile.e_end_bricks_wall.name=End Stone Wall
+tile.smooth_end_stone_wall.name=Smooth End Stone Wall
+tile.e_purpur_wall.name=Purpur Wall
 
 # Tools -
 item.tool_axe_endorium.name=Endorium Axe
@@ -33,10 +44,16 @@ item.tool_pickaxe_endorium.name=Endorium Pickaxe
 item.tool_sword_endorium.name=Endorium Sword
 item.tool_hoe_endorium.name=Endorium Hoe
 item.tool_shovel_endorium.name=Endorium Shovel
+item.tool_axe_wolframium.name=Wolframium Axe
+item.tool_pickaxe_wolframium.name=Wolframium Pickaxe
+item.tool_sword_wolframium.name=Wolframium Sword
+item.tool_hoe_wolframium.name=Wolframium Hoe
+item.tool_shovel_wolframium.name=Wolframium Shovel
 item.tool_hammer_iron.name=Sledgehammer
+item.tool_magnifier.name=Magnitifus
 
 #Armors
-item.armour_helmet_obsidian.name=Obsidian Helmet
+item.armour_helmet_helmet.name=Obsidian Helmet
 item.armour_chestplate_obsidian.name=Obsidian Chestplate
 item.armour_leggings_obsidian.name=Obsidian Leggins
 item.armour_boots_obsidian.name=Obsidian Boots
@@ -48,9 +65,15 @@ item.food_dragonite_berries.name=Dragonite Berries
 #Entities
 entity.endguard.name=End Guard
 entity.watcher.name=Watcher
+entity.endlord.name=End-Mage Barclay
+
+#Enchants
+enchantment.shulker_core=Shulker Core
+enchantment.ender_core=Ender Core
 
 #Other
 tile.ender_sword.tooltip=Right click to teleport
+tile.block_rune.tooltip=Maybe try to surround with purple blocks...
 
 #Advancements 
 advancements.endreborn.root.title=End: Reborn
@@ -88,3 +111,15 @@ advancements.endreborn.end_rune.description=Create: End Rune
 
 advancements.endreborn.lormyte_crystal.title=Something new
 advancements.endreborn.lormyte_crystal.description=Obtain: Lormyte Crystal
+
+advancements.endreborn.tool_magnifier.title=Duet of Metals
+advancements.endreborn.tool_magnifier.description=Get: Magnitifus
+
+advancements.endreborn.item_ingot_wolframium.title=He melted!
+advancements.endreborn.item_ingot_wolframium.description=Get: Wolframium Ingot
+
+advancements.endreborn.lord.title=Last of...
+advancements.endreborn.lord.description=Get: String of Life
+
+advancements.endreborn.world_mirror.title=Also try ter...
+advancements.endreborn.world_mirror.description=Create: World Mirror
