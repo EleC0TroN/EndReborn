@@ -18,6 +18,7 @@ public class ConfigHandler
  public static boolean spawnLormyte;
  public static boolean panorama;
  public static boolean teleporterEnd;
+ public static boolean decoratorEnd;
 
  public static void init(File file)
  {
@@ -31,6 +32,7 @@ public class ConfigHandler
 	 spawnEndIsland = config.getBoolean("EndIsland", category, true, "Allows to spawn");
 	 spawnObservatory = config.getBoolean("Observatory", category, true, "Allows to spawn");
 	 spawnLormyte = config.getBoolean("Lormyte", category, true, "Allows to spawn");
+	 decoratorEnd = config.getBoolean("End Magma, Enropy End Stone", category, true, ", Enropy End Stone");
 	 
 	 panorama = config.getBoolean("Panorama", category, true, "Panorama");
 	 teleporterEnd = config.getBoolean("End Void Teleporter", category, true, "End Void Teleporter");

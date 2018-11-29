@@ -11,22 +11,27 @@ import net.minecraft.entity.ai.EntityAIMoveTowardsTarget;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.monster.EntityEndermite;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSourceIndirect;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.BossInfo;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.BossInfoServer;
 import net.minecraft.world.World;
 
 public class EntityLord extends EntityLordBase
 {
-	
+	private final BossInfoServer bossInfo = (BossInfoServer)(new BossInfoServer(this.getDisplayName(), BossInfo.Color.PURPLE, 
+			BossInfo.Overlay.PROGRESS)).setDarkenSky(true);
 	@Override
 	public boolean isImmuneToExplosions()
 	{
@@ -68,6 +73,39 @@ public class EntityLord extends EntityLordBase
     {
         return SoundEvents.ENTITY_ENDERMEN_AMBIENT;
     }
+	@Override
+	public void addTrackingPlayer(EntityPlayerMP player)
+    {
+        super.addTrackingPlayer(player);
+        this.bossInfo.addPlayer(player);
+    }
+
+	@Override
+	public void readEntityFromNBT(NBTTagCompound compound)
+    {
+        super.readEntityFromNBT(compound);
+
+        if (this.hasCustomName())
+        {
+            this.bossInfo.setName(this.getDisplayName());
+        }
+    }
+	public boolean isNonBoss()
+    {
+        return false;
+    }
+    @Override
+    public void setCustomNameTag(String name)
+    {
+        super.setCustomNameTag(name);
+        this.bossInfo.setName(this.getDisplayName());
+    }
+	@Override
+	public void removeTrackingPlayer(EntityPlayerMP player)
+    {
+        super.removeTrackingPlayer(player);
+        this.bossInfo.removePlayer(player);
+    }
     @Override
 	public void initEntityAI()
     {
@@ -82,7 +120,6 @@ public class EntityLord extends EntityLordBase
 		this.setDead();
 		if(!world.isRemote)
 		{
-			
 			EntityEnderman ender = new EntityEnderman(world);
 			ender.setLocationAndAngles(this.posX, this.posY + 1, this.posZ, this.rotationYaw, this.rotationPitch);
 			this.world.spawnEntity(ender);
@@ -112,9 +149,24 @@ public class EntityLord extends EntityLordBase
         return this.teleportTo(d1, d2, d3);
     }
 
-    /**
-     * Teleport the enderman
-     */
+	@Override
+	protected void updateAITasks()
+    {
+		super.updateAITasks();
+		
+		if(this.ticksExisted % 20 == 0)
+		{
+			if(this.getHealth() < 40)
+			{
+                this.addPotionEffect(new PotionEffect(MobEffects.HASTE, 100, 1));
+                this.addPotionEffect(new PotionEffect(MobEffects.SPEED, 100, 1));
+				this.heal(2.0F);
+			}
+		}
+		
+		
+		this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());
+    }
     private boolean teleportTo(double x, double y, double z)
     {
         net.minecraftforge.event.entity.living.EnderTeleportEvent event = new net.minecraftforge.event.entity.living.EnderTeleportEvent(this, x, y, z, 0);

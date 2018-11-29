@@ -5,6 +5,7 @@ import java.util.List;
 
 import endreborn.objects.armour.ArmourBase;
 import endreborn.objects.armour.ArmourModel;
+import endreborn.objects.food.FoodChorusSoup;
 import endreborn.objects.food.FoodDragonBerries;
 import endreborn.objects.food.FoodEnderFlesh;
 import endreborn.objects.items.ItemAPearl;
@@ -22,13 +23,11 @@ import endreborn.objects.tools.ToolHoe;
 import endreborn.objects.tools.ToolPickaxe;
 import endreborn.objects.tools.ToolShovel;
 import endreborn.objects.tools.ToolSword;
-import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemInit 
@@ -82,9 +81,9 @@ public class ItemInit
 
     
     //Food
-    public static final Item ENDER_FLESH = new FoodEnderFlesh("food_ender_flesh", new PotionEffect(MobEffects.NIGHT_VISION, 450, 1));
+    public static final Item ENDER_FLESH = new FoodEnderFlesh("food_ender_flesh");
     public static final Item DRAGONITE_BERRIES = new FoodDragonBerries("food_dragonite_berries");
-   
+    public static final Item CHORUS_SOUP = new FoodChorusSoup(5, "food_chorus_soup");
     
 }
 

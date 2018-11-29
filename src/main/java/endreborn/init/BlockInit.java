@@ -5,6 +5,7 @@ import java.util.List;
 
 import endreborn.objects.blocks.BlockCrystal;
 import endreborn.objects.blocks.BlockEndBase;
+import endreborn.objects.blocks.BlockEndMagma;
 import endreborn.objects.blocks.BlockEssenceOre;
 import endreborn.objects.blocks.BlockPhantom;
 import endreborn.objects.blocks.BlockRune;
@@ -36,6 +37,7 @@ public class BlockInit
 	public static final Block BLOCK_WOLFRAMIUM = new BlockEndBase("block_wolframium", Material.IRON);
 	public static final Block ORE_WOLFRAMIUM = new BlockWolframiumOre("block_wolframium_ore", Material.ROCK);
 	public static final Block BLOCK_RUNE = new BlockRune("block_rune", Material.ROCK);
+	public static final Block BLOCK_END_MAGMA = new BlockEndMagma("block_end_magma");
 	
 	public static final Block STAIRS_END_BRICKS = new BlockStairsBase("e_end_bricks_stairs", Blocks.END_BRICKS);
 	public static final Block STAIRS_SMOOTH_END_STONE = new BlockStairsBase("smooth_end_stone_stairs", BlockInit.END_STONE_SMOOTH);

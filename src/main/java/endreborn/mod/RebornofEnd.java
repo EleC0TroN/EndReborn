@@ -8,6 +8,7 @@ import endreborn.tabs.EndReborn;
 import endreborn.util.GuiMainMenuEnd;
 import endreborn.util.Reference;
 import endreborn.util.handlers.ConfigHandler;
+import endreborn.util.handlers.EndVillagerHandler;
 import endreborn.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -46,7 +47,13 @@ public class RebornofEnd
     @EventHandler
     public static void init(FMLInitializationEvent event)
     {
+    	if(event.getSide() == Side.CLIENT) 
+        {
+    	EndVillagerHandler.initIEVillagerTrades();
+    	EndVillagerHandler.initIEVillagerHouse();
+        }
     	RecipesInit.init();
+    	
         if(event.getSide() == Side.CLIENT && ConfigHandler.panorama) 
         {
             GuiMainMenuEnd.endMainMenu();

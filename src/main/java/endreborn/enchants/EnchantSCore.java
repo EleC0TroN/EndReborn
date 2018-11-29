@@ -14,8 +14,8 @@ public class EnchantSCore extends Enchantment {
 
     public EnchantSCore() {
         super(Rarity.RARE, EnumEnchantmentType.WEAPON, new EntityEquipmentSlot[] { EntityEquipmentSlot.MAINHAND });
-        setRegistryName(Reference.MODID, "shalker_core");
-        setName("shalker_core");
+        setRegistryName(Reference.MODID, "shulker_core");
+        setName("shulker_core");
     }
 
     public void onEntityDamaged(EntityLivingBase user, Entity target, int level) {
