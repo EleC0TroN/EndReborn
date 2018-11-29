@@ -37,6 +37,7 @@ tile.smooth_end_stone_stairs.name=Smooth End Stone Stairs
 tile.e_end_bricks_wall.name=End Stone Wall
 tile.smooth_end_stone_wall.name=Smooth End Stone Wall
 tile.e_purpur_wall.name=Purpur Wall
+tile.block_end_magma.name=End Magma
 
 # Tools -
 item.tool_axe_endorium.name=Endorium Axe
@@ -61,11 +62,21 @@ item.armour_boots_obsidian.name=Obsidian Boots
 #Food
 item.food_ender_flesh.name=Ender Flesh
 item.food_dragonite_berries.name=Dragonite Berries
+item.food_chorus_soup.name=Chorus Soup
 
 #Entities
 entity.endguard.name=End Guard
 entity.watcher.name=Watcher
 entity.endlord.name=End-Mage Barclay
+entity.Villager.endreborn.nether_explorer.name=Nether Explorer
+entity.Villager.endreborn.end_explorer.name=End Explorer
+entity.Villager.endreborn.overworld_explorer.name=World Explorer
+
+#Book
+item.endreborn.book.name=Book of The End
+info.endreborn.book.landing=Much time has passed since the time when I found The End. I begin to wonder if I saw everything, discovered and studied everything, I think it's time to set off to a new journey!
+
+info.endreborn.book.subtitle=Your discoveries
 
 #Enchants
 enchantment.shulker_core=Shulker Core
@@ -123,3 +134,6 @@ advancements.endreborn.lord.description=Get: String of Life
 
 advancements.endreborn.world_mirror.title=Also try ter...
 advancements.endreborn.world_mirror.description=Create: World Mirror
+
+advancements.endreborn.food_chorus_soup.title=Like a borscht!
+advancements.endreborn.food_chorus_soup.description=Create: Chorus Soup

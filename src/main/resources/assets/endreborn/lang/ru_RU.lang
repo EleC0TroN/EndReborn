@@ -37,6 +37,7 @@ tile.smooth_end_stone_stairs.name=Полированные эндерняков�
 tile.e_end_bricks_wall.name=Эндерняковая ограда
 tile.smooth_end_stone_wall.name=Полированная эндерняковая ограда
 tile.e_purpur_wall.name=Пурпурная ограда
+tile.block_end_magma.name=Эндер-магма
 
 # Tools -
 item.tool_axe_endorium.name=Эндориумовый топор
@@ -61,12 +62,20 @@ item.armour_boots_obsidian.name=Обсидиановые ботинки
 #Food
 item.food_ender_flesh.name=Плоть эндера
 item.food_dragonite_berries.name=Ягоды драгонита
+item.food_chorus_soup.name=Настой из коруса
 
 #Entities
 entity.endguard.name=Страж Края
 entity.watcher.name=Наблюдатель
 entity.endlord.name=Энд-Маг Барклай
+entity.Villager.endreborn.nether_explorer=Исследователь Нижнего мира
+entity.Villager.endreborn.end_explorer=Исследователь Края
+entity.Villager.endreborn.overworld_explorer=Исследователь мира
 
+#Book
+item.endreborn.book.name=Книга Края
+info.endreborn.book.landing=Много времени прошло со времен открытия мною измерения Края. Я начинаю задумываться, все ли я увидел, открыл и изучил в нем, думаю пришло время отпрвиться в новое путешествие!
+info.endreborn.book.subtitle=Ваши изучения мира 
 
 #Enchants
 enchantment.shulker_core=Ядро Шалкера
@@ -124,3 +133,6 @@ advancements.endreborn.lord.description=Получить: Нить жизни
 
 advancements.endreborn.world_mirror.title=Также попобуйте тер...
 advancements.endreborn.world_mirror.description=Создать: Зеркало мира
+
+advancements.endreborn.food_chorus_soup.title=Вкус борща!
+advancements.endreborn.food_chorus_soup.description=Создать: Настой из коруса
