@@ -1,0 +1,18 @@
+{
+    "name": "Ёнд-ћаг Ѕарклай",
+    "icon": "endreborn:ender_sword",
+    "category": "being",
+	"advancement": "endreborn:endreborn/lord",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "я считаю большим достижением даже встретить его... стоп, а кто он? ¬ битве с ним € услышал его им€, его похоже зовут Ѕарклай. ≈ще его кожа медленно начинает разрушатьс€...  акое отношение он имеет ко всему... когда-нибудь узнаю."
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:item_ender_string",
+            "link_recipe": true
+        }
+    ]
+}

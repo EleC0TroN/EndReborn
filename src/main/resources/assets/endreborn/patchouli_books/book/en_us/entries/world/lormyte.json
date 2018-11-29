@@ -1,0 +1,18 @@
+{
+    "name": "Lormyte",
+    "icon": "endreborn:block_lormyte_crystal",
+    "category": "world",
+	"advancement": "endreborn:endreborn/lormyte_crystal",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Hmm, I had not noticed these crystals in the End before. They are not amenable to gravity, and look good."
+        },
+		{
+            "type": "spotlight",
+            "item": "endreborn:block_lormyte_crystal",
+            "link_recipe": true
+        }
+    ]
+}

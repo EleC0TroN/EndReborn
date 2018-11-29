@@ -1,0 +1,36 @@
+{
+    "name": "Вольфрам",
+    "icon": "endreborn:item_ingot_wolframium",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Гуляя по миру я обнаружил новую руду, с виду чем-то напоминает железо, сейчас проверим."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:tool_pickaxe_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_axe_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_shovel_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_sword_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_hoe_wolframium",
+            "link_recipe": true
+        }
+    ]
+}

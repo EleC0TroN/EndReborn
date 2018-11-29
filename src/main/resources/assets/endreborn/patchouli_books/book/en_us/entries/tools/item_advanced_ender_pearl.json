@@ -1,0 +1,17 @@
+{
+    "name": "Advanced Ender Pearl",
+    "icon": "endreborn:item_advanced_ender_pearl",
+    "category": "tools",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "During the experiments with the essence, I managed to get the pearls to teleport constantly, without delay. I need to try"
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:item_advanced_ender_pearl",
+            "link_recipe": true
+        }
+    ]
+}

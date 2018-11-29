@@ -1,0 +1,36 @@
+{
+    "name": "Wolframium",
+    "icon": "endreborn:item_ingot_wolframium",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Walking around the world, I discovered a new ore, which looks like  iron, now let's check."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:tool_pickaxe_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_axe_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_shovel_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_sword_wolframium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_hoe_wolframium",
+            "link_recipe": true
+        }
+    ]
+}

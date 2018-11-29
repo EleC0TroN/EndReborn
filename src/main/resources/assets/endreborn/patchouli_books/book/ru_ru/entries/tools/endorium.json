@@ -1,0 +1,18 @@
+{
+    "name": "Ёндориум",
+    "icon": "endreborn:item_ingot_endorium",
+    "category": "tools",
+    "advancement": "endreborn:endreborn/raw_endorium",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "—пуст€ несколько попыток использовать кувалду... пострадало многое, но мне все же удалось! € создал новый материал - Ёндориум. —виду он очень прочный, и похоже, немного вибрирует."
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:item_raw_endorium",
+            "link_recipe": true
+        }
+    ]
+}

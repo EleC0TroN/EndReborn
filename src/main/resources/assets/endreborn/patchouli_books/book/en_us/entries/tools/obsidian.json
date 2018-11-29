@@ -1,0 +1,31 @@
+{
+    "name": "Obsidian",
+    "icon": "endreborn:item_shard_obsidian",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "What if I try to apply sledgehammer on the hardest block - obsidian... Yes, I did it, albeit with great difficulty. My strength is weak... I'm starting to envy the hardness of obsidian, hmm...."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:armour_helmet_helmet",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_chestplate_obsidian",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_leggings_obsidian",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_boots_obsidian",
+            "link_recipe": true
+        }
+    ]
+}

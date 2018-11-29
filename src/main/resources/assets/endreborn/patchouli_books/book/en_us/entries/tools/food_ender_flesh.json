@@ -1,0 +1,17 @@
+{
+    "name": "Ender Flesh",
+    "icon": "endreborn:food_ender_flesh",
+    "category": "tools",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "All scientists try their discoveries on themselves, but I will taste it... I feel bad... but it seems I began to see in the dark."
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:food_ender_flesh",
+            "link_recipe": true
+        }
+    ]
+}

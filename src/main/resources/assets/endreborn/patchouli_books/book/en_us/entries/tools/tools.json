@@ -1,0 +1,36 @@
+{
+    "name": "Tools",
+    "icon": "endreborn:tool_pickaxe_endorium",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "New tools have proven to be really durable. Maybe I should spend diamonds on something else ..."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:tool_pickaxe_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_axe_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_shovel_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_sword_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_hoe_endorium",
+            "link_recipe": true
+        }
+    ]
+}

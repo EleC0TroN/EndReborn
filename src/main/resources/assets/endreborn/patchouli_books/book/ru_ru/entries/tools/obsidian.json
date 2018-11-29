@@ -1,0 +1,31 @@
+{
+    "name": "Обсидиан",
+    "icon": "endreborn:item_shard_obsidian",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Что если попробовать применить куалду на самом прочном блоке - обсидиане... Да, у меня получилось, хоть и с большом трудом. Моя сила слаба... я начинаю завидывать прочности обсидиана, хотя...."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:armour_helmet_helmet",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_chestplate_obsidian",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_leggings_obsidian",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:armour_boots_obsidian",
+            "link_recipe": true
+        }
+    ]
+}

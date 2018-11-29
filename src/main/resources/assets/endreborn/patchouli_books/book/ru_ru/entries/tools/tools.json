@@ -1,0 +1,36 @@
+{
+    "name": "Инструменты",
+    "icon": "endreborn:tool_pickaxe_endorium",
+    "category": "tools",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Новые инструменты оказались действительно прочными. Может стоит потрать алмазы на что-то другое..."
+        },
+        {
+            "type": "spotlight",
+            "item": "endreborn:tool_pickaxe_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_axe_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_shovel_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_sword_endorium",
+            "link_recipe": true
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:tool_hoe_endorium",
+            "link_recipe": true
+        }
+    ]
+}
