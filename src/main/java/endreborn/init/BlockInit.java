@@ -5,6 +5,7 @@ import java.util.List;
 
 import endreborn.objects.blocks.BlockCrystal;
 import endreborn.objects.blocks.BlockEndBase;
+import endreborn.objects.blocks.BlockEndForge;
 import endreborn.objects.blocks.BlockEndMagma;
 import endreborn.objects.blocks.BlockEssenceOre;
 import endreborn.objects.blocks.BlockPhantom;
@@ -16,12 +17,15 @@ import endreborn.objects.blocks.DragonBush;
 import endreborn.objects.blocks.EnderCropBase;
 import endreborn.objects.blocks.LampBase;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
 public class BlockInit 
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	
+	public static final Material END_FORGE = (new Material(MapColor.STONE));
 	
 	public static final Block BLOCK_ENDORIUM = new BlockEndBase("block_endorium", Material.IRON);
 	public static final Block END_STONE_SMOOTH = new BlockEndBase("block_end_stone_smooth", Material.ROCK);
@@ -38,6 +42,7 @@ public class BlockInit
 	public static final Block ORE_WOLFRAMIUM = new BlockWolframiumOre("block_wolframium_ore", Material.ROCK);
 	public static final Block BLOCK_RUNE = new BlockRune("block_rune", Material.ROCK);
 	public static final Block BLOCK_END_MAGMA = new BlockEndMagma("block_end_magma");
+	public static final Block BLOCK_END_FORGE = new BlockEndForge("block_end_forge");
 	
 	public static final Block STAIRS_END_BRICKS = new BlockStairsBase("e_end_bricks_stairs", Blocks.END_BRICKS);
 	public static final Block STAIRS_SMOOTH_END_STONE = new BlockStairsBase("smooth_end_stone_stairs", BlockInit.END_STONE_SMOOTH);

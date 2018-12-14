@@ -3,11 +3,13 @@ package endreborn.entity;
 import javax.annotation.Nullable;
 
 import endreborn.util.handlers.LootTableHandler;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIMoveTowardsTarget;
+import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.entity.monster.EntityEndermite;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,11 +22,13 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSourceIndirect;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.world.BossInfo;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.BossInfoServer;
 import net.minecraft.world.World;
 
@@ -153,7 +157,6 @@ public class EntityLord extends EntityLordBase
 	protected void updateAITasks()
     {
 		super.updateAITasks();
-		
 		if(this.ticksExisted % 20 == 0)
 		{
 			if(this.getHealth() < 40)
@@ -163,6 +166,58 @@ public class EntityLord extends EntityLordBase
 				this.heal(2.0F);
 			}
 		}
+		if(this.ticksExisted % 800 == 0)
+		{
+			if(this.getHealth() < 150 && this.getHealth() > 120)
+			{
+				if(!world.isRemote)
+				{
+					world.getClosestPlayerToEntity(this, 30D).sendMessage(new TextComponentString(I18n.format("tile.ender_lord.rage_1"))); 
+				}
+			}
+		}
+		if(this.ticksExisted % 800 == 0)
+		{
+			if(this.getHealth() < 120 && this.getHealth() > 90)
+			{
+				if(!world.isRemote)
+				{
+					world.getClosestPlayerToEntity(this, 30D).sendMessage(new TextComponentString(I18n.format("tile.ender_lord.rage_2")));
+				}
+			}
+		}
+		if(this.ticksExisted % 800 == 0)
+		{
+			if(this.getHealth() < 90 && this.getHealth() > 50)
+			{
+				if(!world.isRemote)
+				{
+					world.getClosestPlayerToEntity(this, 30D).sendMessage(new TextComponentString(I18n.format("tile.ender_lord.rage_3")));
+				}
+			}
+		}
+		if(this.ticksExisted % 400 == 0)
+		{
+			if(this.getHealth() < 30 && this.getHealth() > 10)
+			{
+				if(!world.isRemote)
+				{
+					world.getClosestPlayerToEntity(this, 30D).sendMessage(new TextComponentString(I18n.format("tile.ender_lord.rage_4")));
+				}
+			}
+		}
+		for(Entity entity : world.getEntitiesWithinAABBExcludingEntity(this, getEntityBoundingBox().grow(64.0D, 64.0D, 64.0D)))
+			if(entity instanceof EntityWither){
+				if(!world.isRemote){
+					this.world.playSound(this.posX, this.posY + (double)this.getEyeHeight(), this.posZ, SoundEvents.ENTITY_ENDERDRAGON_AMBIENT, this.getSoundCategory(), 2.5F, 1.0F, false);
+					world.removeEntity(entity);
+					if(entity.isDead)
+						world.getClosestPlayerToEntity(this, 30D).sendMessage(new TextComponentString(I18n.format("tile.ender_lord.wither")));
+				
+				}
+					
+			}
+			
 		
 		
 		this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());

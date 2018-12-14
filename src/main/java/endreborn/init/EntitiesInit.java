@@ -1,8 +1,10 @@
 package endreborn.init;
 
+import endreborn.entity.render.RenderAngryEnder;
 import endreborn.entity.render.RenderEGuard;
 import endreborn.entity.render.RenderLord;
 import endreborn.entity.render.RenderWatcher;
+import endreborn.entity.EntityAngryEnder;
 import endreborn.entity.EntityEGuard;
 import endreborn.entity.EntityLord;
 import endreborn.entity.EntityWatcher;
@@ -33,8 +35,16 @@ public class EntitiesInit {
         EntityRegistry.addSpawn(EntityWatcher.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.TAIGA);
         EntityRegistry.addSpawn(EntityWatcher.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
         EntityRegistry.addSpawn(EntityEndermite.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.SKY);
-        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID, "endlord"), EntityLord.class, "endlord", id++, RebornofEnd.instance, 64, 3, false, 461076, 2236447);
-       
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID, "endlord"), EntityLord.class, "endlord", id++, RebornofEnd.instance, 64, 3, false, 461076, 681365);
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID, "angry_enderman"), EntityAngryEnder.class, "angry_enderman", id++, RebornofEnd.instance, 64, 3, false, 461076, 660033);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.HELL);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.FOREST);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.PLAINS);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.DESERT);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.MESA);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.SAVANNA);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.TAIGA);
+        EntityRegistry.addSpawn(EntityAngryEnder.class, 3, 0, 1, EnumCreatureType.MONSTER, Biomes.EXTREME_HILLS);
     }
     
     @SideOnly(Side.CLIENT)
@@ -42,6 +52,7 @@ public class EntitiesInit {
         RenderingRegistry.registerEntityRenderingHandler(EntityEGuard.class, RenderEGuard.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityWatcher.class, RenderWatcher.FACTORY);
         RenderingRegistry.registerEntityRenderingHandler(EntityLord.class, RenderLord.FACTORY);
+        RenderingRegistry.registerEntityRenderingHandler(EntityAngryEnder.class, RenderAngryEnder.FACTORY);
     }
 }
 

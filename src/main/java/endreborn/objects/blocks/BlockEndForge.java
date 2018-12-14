@@ -1,5 +1,6 @@
 package endreborn.objects.blocks;
 
+import java.util.List;
 import java.util.Random;
 
 import endreborn.init.BlockInit;
@@ -11,6 +12,8 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -19,6 +22,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
@@ -29,11 +33,11 @@ import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockEndMagma extends Block implements IHasModel
+public class BlockEndForge extends Block implements IHasModel
 {
-    public BlockEndMagma(String name)
+    public BlockEndForge(String name)
     {
-        super(Material.ROCK);
+        super(BlockInit.END_FORGE);
     	setUnlocalizedName(name);
 		setRegistryName(name);
         setCreativeTab(RebornofEnd.endertab);
@@ -65,7 +69,7 @@ public class BlockEndMagma extends Block implements IHasModel
     {
         return 15728880;
     }
-    
+
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         BlockPos blockpos = pos.up();
@@ -82,14 +86,39 @@ public class BlockEndMagma extends Block implements IHasModel
             }
         }
     }
-
-    public boolean canEntitySpawn(IBlockState state, Entity entityIn)
-    {
-        return entityIn.isImmuneToFire();
-    }
+    @Override
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) 
+	{
+		tooltip.add(I18n.format("tile.block_forge.tooltip"));
+	}
     @Override
 	public void registerModels() 
 	{
 		RebornofEnd.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
+    @SideOnly(Side.CLIENT)
+    public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
+    {
+    	double d0 = (double)pos.getX();
+        double d1 = (double)pos.getY();
+        double d2 = (double)pos.getZ();
+        if (worldIn.getBlockState(pos.up()).getMaterial() == Material.AIR)
+        {
+            if (rand.nextInt(50) == 0)
+            {
+                double d8 = d0 + (double)rand.nextFloat();
+                double d4 = d1 + stateIn.getBoundingBox(worldIn, pos).maxY;
+                double d6 = d2 + (double)rand.nextFloat();
+                worldIn.spawnParticle(EnumParticleTypes.LAVA, d8, d4, d6, 0.0D, 0.0D, 0.0D);
+                worldIn.playSound(d8, d4, d6, SoundEvents.BLOCK_LAVA_POP, SoundCategory.BLOCKS, 0.2F + rand.nextFloat() * 0.2F, 0.9F + rand.nextFloat() * 0.15F, false);
+            }
+
+            if (rand.nextInt(100) == 0)
+            {
+                worldIn.playSound(d0, d1, d2, SoundEvents.BLOCK_LAVA_AMBIENT, SoundCategory.BLOCKS, 0.2F + rand.nextFloat() * 0.2F, 0.9F + rand.nextFloat() * 0.15F, false);
+            }
+        }
+    }
 }
+    

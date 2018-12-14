@@ -12,6 +12,7 @@ import endreborn.objects.items.ItemAPearl;
 import endreborn.objects.items.ItemBase;
 import endreborn.objects.items.ItemDeather;
 import endreborn.objects.items.ItemDragonSeeds;
+import endreborn.objects.items.ItemDragoniteTea;
 import endreborn.objects.items.ItemEnderBow;
 import endreborn.objects.items.ItemEnderSword;
 import endreborn.objects.items.ItemHammer;
@@ -56,6 +57,9 @@ public class ItemInit
     public static final Item INGOT_WOLFRAMIUM = new ItemBase("item_ingot_wolframium");
     public static final Item ENDER_STRING = new ItemLegendary("item_ender_string");
     public static final Item WORLD_MIRROR = new ItemWorldMirror("item_world_mirror");
+    public static final Item DRAGONITE_TEA = new ItemDragoniteTea("item_dragonite_tea");
+    public static final Item ANGEL_FEATHER = new ItemBase("item_angel_feather");
+
     
     //Tools
     public static final Item PICKAXE_ENDORIUM = new ToolPickaxe("tool_pickaxe_endorium", TOOL_ENDORIUM);
@@ -64,7 +68,7 @@ public class ItemInit
     public static final Item AXE_ENDORIUM = new EndoriumAxe("tool_axe_endorium", TOOL_ENDORIUM);
     public static final Item SHOVEL_ENDORIUM = new ToolShovel("tool_shovel_endorium", TOOL_ENDORIUM);
     public static final Item HAMMER_IRON = new ItemHammer("tool_hammer_iron");
-    public static final Item ENDER_BOW = new ItemEnderBow("ender_bow");
+    public static final Item ENDER_BOW = new ItemEnderBow("ender_bow", 10, 0, 1, 2);
     public static final Item ENDER_SWORD = new ItemEnderSword("ender_sword", TOOL_END);
     public static final Item ENDER_HOOK = new ItemDeather("tool_magnifier", TOOL_MAGNIFIER);
     public static final Item PICKAXE_WOLFRAMIUM = new ToolPickaxe("tool_pickaxe_wolframium", TOOL_WOLFRAMIUM);
@@ -78,7 +82,6 @@ public class ItemInit
     public static final Item LEGGINGS_ENDORIUM = new ArmourBase("armour_leggings_obsidian", ARMOUR_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
     public static final Item BOOTS_ENDORIUM = new ArmourBase("armour_boots_obsidian", ARMOUR_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
     public static final Item HELMET_TEST = new ArmourModel("armour_helmet_helmet", ARMOUR_HELMET, 1, EntityEquipmentSlot.HEAD);
-
     
     //Food
     public static final Item ENDER_FLESH = new FoodEnderFlesh("food_ender_flesh");
