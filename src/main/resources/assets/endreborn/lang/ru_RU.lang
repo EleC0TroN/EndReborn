@@ -16,6 +16,8 @@ item.item_end_rune.name=Руна Края
 item.item_lormyte_crystal.name=Кристалл лормита
 item.item_ender_string.name=Нить жизни
 item.item_world_mirror.name=Зеркало мира
+item.item_dragonite_tea.name=Драгонитовый чай
+item.item_angel_feather.name=Ангельское перо
 
 # Blocks -
 tile.block_endorium.name=Блок эндориума
@@ -38,6 +40,7 @@ tile.e_end_bricks_wall.name=Эндерняковая ограда
 tile.smooth_end_stone_wall.name=Полированная эндерняковая ограда
 tile.e_purpur_wall.name=Пурпурная ограда
 tile.block_end_magma.name=Эндер-магма
+tile.block_end_forge.name=Кузня пустоты
 
 # Tools -
 item.tool_axe_endorium.name=Эндориумовый топор
@@ -84,6 +87,13 @@ enchantment.ender_core=Ядро Эндера
 #Other
 tile.ender_sword.tooltip=ПКМ для телепортации
 tile.block_rune.tooltip=Призывает сущность, если окружить пурпурными блоками...
+tile.block_forge.tooltip=Может переплавлять руду, если покласть ее на кузню
+tile.ender_lord.rage_1=Ты... Ты продолжаешь сражаться?
+tile.ender_lord.rage_2=Ты пытаешься убить всех?
+tile.ender_lord.rage_3=Ты ничего не знаешь!
+tile.ender_lord.rage_4=Чтобы встать, сначала упади!
+tile.ender_lord.wither=Нельзя сравнивать создание и создателя!
+tile.ender_lord.rage_5=Ты это читаешь?
 
 #Advancements 
 advancements.endreborn.root.title=Энд: Возрождение
@@ -136,3 +146,6 @@ advancements.endreborn.world_mirror.description=Создать: Зеркало �
 
 advancements.endreborn.food_chorus_soup.title=Вкус борща!
 advancements.endreborn.food_chorus_soup.description=Создать: Настой из коруса
+
+advancements.endreborn.end_forge.title=Мир в огне
+advancements.endreborn.end_forge.description=Создать: Кузня пустоты
