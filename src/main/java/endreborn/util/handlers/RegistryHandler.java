@@ -53,6 +53,7 @@ public class RegistryHandler
 	}
 	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
+	
 		MinecraftForge.EVENT_BUS.register(new EventHandler());
 		GameRegistry.registerWorldGenerator(new OreGen(), 0);
     	EntitiesInit.init();

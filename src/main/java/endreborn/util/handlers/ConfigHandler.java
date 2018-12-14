@@ -19,6 +19,7 @@ public class ConfigHandler
  public static boolean panorama;
  public static boolean teleporterEnd;
  public static boolean decoratorEnd;
+ public static int islandRare = 2;
 
  public static void init(File file)
  {
@@ -36,6 +37,7 @@ public class ConfigHandler
 	 
 	 panorama = config.getBoolean("Panorama", category, true, "Panorama");
 	 teleporterEnd = config.getBoolean("End Void Teleporter", category, true, "End Void Teleporter");
+	 islandRare = config.getInt("Island Rarity", category, 200, 50, 1000, "If <200 That Island More Rare");
 	 
 	 config.save();
  }

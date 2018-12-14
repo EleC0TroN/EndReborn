@@ -4,7 +4,11 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 import net.minecraft.client.gui.GuiMainMenu;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 public class EndHelper 
@@ -32,5 +36,33 @@ public class EndHelper
 		}
 	}
 
+	 public static void dropItemInWorldExact(World world, double x, double y, double z, ItemStack stack)
+	    {
+	        world.spawnEntity(new EntityItem(world, x, y, z, stack));
+	    }
+	 
+	 public static ItemStack consumeItem(ItemStack stack)
+	    {
+	        return consumeItem(stack, 1);
+	    }
 
+	    public static ItemStack consumeItem(ItemStack stack, int amount)
+	    {
+	        if (stack.getCount() > amount)
+	        {
+	            stack.shrink(amount);
+	            return stack;
+	        }
+	        return ItemStack.EMPTY;
+	    }
+
+	    public static ItemStack consumeItem(EntityPlayer player, ItemStack stack)
+	    {
+	        return player.isCreative() ? stack : consumeItem(stack, 1);
+	    }
+
+	    public static ItemStack consumeItem(EntityPlayer player, ItemStack stack, int amount)
+	    {
+	        return player.isCreative() ? stack : consumeItem(stack, amount);
+	    }
 }

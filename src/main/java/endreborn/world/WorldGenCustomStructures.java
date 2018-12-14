@@ -43,11 +43,11 @@ public class WorldGenCustomStructures implements IWorldGenerator
 			case 0:
 				if(ConfigHandler.spawnEndIsland)
 				{
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomePlains.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeForest.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeDesert.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeOcean.class);
-				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, 200, Blocks.AIR, BiomeSavanna.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, ConfigHandler.islandRare, Blocks.AIR, BiomePlains.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, ConfigHandler.islandRare, Blocks.AIR, BiomeForest.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, ConfigHandler.islandRare, Blocks.AIR, BiomeDesert.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, ConfigHandler.islandRare, Blocks.AIR, BiomeOcean.class);
+				generateStructure(new WorldGenStructure("end_island"), world, rand, chunkX, chunkZ, ConfigHandler.islandRare, Blocks.AIR, BiomeSavanna.class);
 				}
 				if(ConfigHandler.spawnObservatory)
 				{

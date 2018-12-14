@@ -1,8 +1,10 @@
 package endreborn.util.handlers;
 
+import endreborn.entity.EntityAngryEnder;
 import endreborn.entity.EntityEGuard;
 import endreborn.entity.EntityLord;
 import endreborn.entity.EntityWatcher;
+import endreborn.entity.render.RenderAngryEnder;
 import endreborn.entity.render.RenderEGuard;
 import endreborn.entity.render.RenderLord;
 import endreborn.entity.render.RenderWatcher;
@@ -38,6 +40,14 @@ public class RenderHandler
 	{
 		return new RenderLord(manager);
 	}
-});
+	});
+	RenderingRegistry.registerEntityRenderingHandler(EntityAngryEnder.class, new IRenderFactory<EntityAngryEnder>()
+	{
+	@Override
+	public Render<? super EntityAngryEnder> createRenderFor(RenderManager manager) 
+	{
+		return new RenderAngryEnder(manager);
+	}
+	});
 }
 }

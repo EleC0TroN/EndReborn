@@ -48,6 +48,16 @@ public class OreGen implements IWorldGenerator
 			runGenerator(ore_wolframium, world, random, chunkX, chunkZ, 25, 0, 48);
 			}
 			break;
+		case 7:
+			if(ConfigHandler.spawnEssenceOre)
+			{
+			runGenerator(ore_over_essence, world, random, chunkX, chunkZ, 50, 0, 256);
+			}
+			if(ConfigHandler.spawnWolframiumOre)
+			{
+			runGenerator(ore_wolframium, world, random, chunkX, chunkZ, 25, 0, 48);
+			}
+			break;
 			
 		case 1:
 			if(ConfigHandler.spawnEssenceOre)
