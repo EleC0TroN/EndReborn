@@ -1,0 +1,19 @@
+﻿{
+    "name": "Кузня пустоты",
+    "icon": "endreborn:block_end_forge",
+    "category": "tools",
+	"advancement": "endreborn:endreborn/end_forge",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Что если использовать магму вместо печи... Для солидности лучше подойдет эндер-магма. Для переплавки нужно покласть руду на верхушку кузни. Еда просто сгорает, лучше не стоит."
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:block_end_forge",
+            "link_recipe": true
+        }
+
+    ]
+}

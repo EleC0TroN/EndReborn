@@ -2,6 +2,7 @@
     "name": "Tools",
     "icon": "endreborn:tool_pickaxe_endorium",
     "category": "tools",
+"advancement": "endreborn:endreborn/raw_endorium",
     "pages": [
         {
             "type": "text",

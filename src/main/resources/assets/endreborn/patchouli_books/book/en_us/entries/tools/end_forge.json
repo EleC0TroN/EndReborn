@@ -1,0 +1,19 @@
+{
+    "name": "Void Forge",
+    "icon": "endreborn:block_end_forge",
+    "category": "tools",
+	"advancement": "endreborn:endreborn/end_forge",
+    "priority": true,
+    "pages": [
+        {
+            "type": "text",
+            "text": "What if I will use magma instead of a furnace ... Ender-magma is just looks better. For melting you need to put ore to the top of the forge. Food just burns, it is better not to try."
+        },
+	{
+            "type": "spotlight",
+            "item": "endreborn:block_end_forge",
+            "link_recipe": true
+        }
+
+    ]
+}

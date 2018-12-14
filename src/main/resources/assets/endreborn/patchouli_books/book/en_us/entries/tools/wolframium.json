@@ -2,6 +2,7 @@
     "name": "Wolframium",
     "icon": "endreborn:item_ingot_wolframium",
     "category": "tools",
+  "advancement": "endreborn:endreborn/item_ingot_wolframium",
     "pages": [
         {
             "type": "text",
