@@ -44,7 +44,7 @@
                 "pulling": 1,
                 "pull": 0.9
             },
-            "model": "endreborn:item/tool_ender_bow_pulling_2"
+            "model": "endreborn:item/ender_bow_pulling_2"
         }
     ]
 }
